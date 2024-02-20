@@ -1,4 +1,7 @@
 name: rpchat
-version: '${project.version}'
-main: work.dvdd.rpchat.Rpchat
+version: '1.2'
+main: work.dvdd.rpchat.Core
 api-version: '1.20'
+authors: [ realdivided ]
+description: A simple plugin for Role Play commands for your Minecraft server.
+website: https://dvdd.work

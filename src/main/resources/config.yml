@@ -1,0 +1,40 @@
+# Format variables:
+# %sender% -> sender's nickname
+# %message% -> message
+# %result% -> result (try, dice, coin)
+
+commands:
+  me:
+    enabled: true
+    format: '§7* %sender% §o%message% *'
+    usage: '[§c!§f] §cUse: /me <message>'
+    radius: 20
+  gme:
+    enabled: true
+    format: '§7* %sender% §o%message% *'
+    usage: '[§c!§f] §cUse: /gme <message>'
+  try:
+    enabled: true
+    format: '§e*§f %sender%: %action% (%result%§f)'
+    usage: '[§c!§f] §cUse: /try <action>'
+    radius: 20
+    results:
+      - '§aSuccessful'
+      - '§cUnsuccessful'
+      # - '§eAlmost successful'
+  do:
+    enabled: true
+    format: '§6*§f %sender% %action% §e'
+    usage: '[§c!§f] §cUse: /do <action>'
+    radius: 20
+  coin:
+    enabled: true
+    format: '§8*§6 %sender% §ftossed a coin (§6%result%§f) §8'
+    radius: 20
+    obverse: '§6Heads'
+    reverse: '§6Tails'
+  whisper:
+    enabled: true
+    format: '§7§o%sender% is whispering: %message%'
+    usage: '[§c!§f] §cUse: /whisper <message>'
+    radius: 4
