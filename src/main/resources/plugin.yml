@@ -1,0 +1,4 @@
+name: rpchat
+version: '${project.version}'
+main: work.dvdd.rpchat.Rpchat
+api-version: '1.20'
