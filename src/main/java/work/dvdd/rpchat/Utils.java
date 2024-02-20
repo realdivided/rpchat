@@ -6,7 +6,9 @@ import org.bukkit.entity.Player;
 import java.util.List;
 import java.util.Random;
 import java.util.stream.Collectors;
-
+/**
+By realdivided
+**/
 public final class Utils {
 
     private static final Random RANDOM = new Random();

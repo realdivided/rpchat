@@ -9,7 +9,9 @@ import work.dvdd.rpchat.Utils;
 
 import java.util.List;
 import java.util.Random;
-
+/**
+ By realdivided
+ **/
 public class TryCommand extends Command {
 
     private final ConfigurationSection config = Core.getInstance().getConfig().getConfigurationSection("commands.try");

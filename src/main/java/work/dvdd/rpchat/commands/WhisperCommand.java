@@ -6,7 +6,9 @@ import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.entity.Player;
 import work.dvdd.rpchat.Core;
 import work.dvdd.rpchat.Utils;
-
+/**
+ By realdivided
+ **/
 public class WhisperCommand extends Command {
 
     private final ConfigurationSection config = Core.getInstance().getConfig().getConfigurationSection("commands.whisper");
