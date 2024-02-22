@@ -38,3 +38,5 @@ commands:
     format: '§7§o%sender% is whispering: %message%'
     usage: '[§c!§f] §cUse: /whisper <message>'
     radius: 4
+
+message: '$name'
