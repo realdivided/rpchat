@@ -1,7 +1,26 @@
 name: rpchat
-version: '1.2'
+version: '1.2.1'
 main: work.dvdd.rpchat.Core
 api-version: '1.20'
 authors: [ realdivided ]
 description: A simple plugin for Role Play commands for your Minecraft server.
 website: https://dvdd.work
+commands:
+  me:
+    description: Команда me
+    usage: /[me] [type anything]
+  gme:
+    description: Команда gme
+    usage: /<gme> [type anything]
+  do:
+    description: Сделать что-либо
+    usage: /<do> [type anything]
+  try:
+    description: Попробовать что-либо
+    usage: /<try> [type anything]
+  whisper:
+    description: Прошептать что-либо
+    usage: /<whisper> [type anything]
+  coin:
+    description: Подбросить монетку
+    usage: /<coin>
