@@ -7,16 +7,16 @@ commands:
   me:
     enabled: true
     format: '§7* %sender% §o%message% *'
-    usage: '[§c!§f] §cUse: /me <message>'
+    usage: '[§c!§f] §cUse: /me (message)'
     radius: 20
   gme:
     enabled: true
     format: '§7* %sender% §o%message% *'
-    usage: '[§c!§f] §cUse: /gme <message>'
+    usage: '[§c!§f] §cUse: /gme (message)'
   try:
     enabled: true
     format: '§e*§f %sender%: %action% (%result%§f)'
-    usage: '[§c!§f] §cUse: /try <action>'
+    usage: '[§c!§f] §cUse: /try (message)'
     radius: 20
     results:
       - '§aSuccessful'
@@ -25,7 +25,7 @@ commands:
   do:
     enabled: true
     format: '§6*§f %sender% %action% §e'
-    usage: '[§c!§f] §cUse: /do <action>'
+    usage: '[§c!§f] §cUse: /do (action)'
     radius: 20
   coin:
     enabled: true
@@ -36,5 +36,5 @@ commands:
   whisper:
     enabled: true
     format: '§7§o%sender% is whispering: %message%'
-    usage: '[§c!§f] §cUse: /whisper <message>'
+    usage: '[§c!§f] §cUse: /whisper (message)'
     radius: 4

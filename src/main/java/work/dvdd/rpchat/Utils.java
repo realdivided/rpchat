@@ -10,7 +10,6 @@ import java.util.stream.Collectors;
 By realdivided
 **/
 public final class Utils {
-
     private static final Random RANDOM = new Random();
 
     public static String extractMessage(String... message) {

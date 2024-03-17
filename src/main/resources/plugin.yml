@@ -7,20 +7,20 @@ description: A simple plugin for Role Play commands for your Minecraft server.
 website: https://dvdd.work
 commands:
   me:
-    description: Команда me
+    description: Sends a role-play message about yourself in the third person.
     usage: /[me] [type anything]
   gme:
-    description: Команда gme
+    description: Gme command
     usage: /<gme> [type anything]
   do:
-    description: Сделать что-либо
+    description: To do something
     usage: /<do> [type anything]
   try:
-    description: Попробовать что-либо
+    description: To try something
     usage: /<try> [type anything]
   whisper:
-    description: Прошептать что-либо
+    description: To whisper something
     usage: /<whisper> [type anything]
   coin:
-    description: Подбросить монетку
+    description: To toss a coin
     usage: /<coin>
