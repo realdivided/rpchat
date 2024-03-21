@@ -10,7 +10,7 @@ public final class Core extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        getServer().getConsoleSender().sendMessage("Running rpchat 1.2.1. Made by realdivided");
+        getServer().getConsoleSender().sendMessage("Running rpchat 1.2.2. Made by realdivided");
         instance = this;
 
         getConfig().options().copyDefaults(true);

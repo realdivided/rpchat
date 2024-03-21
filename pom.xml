@@ -6,12 +6,12 @@
 
     <groupId>work.dvdd</groupId>
     <artifactId>rpchat</artifactId>
-    <version>1.2</version>
+    <version>1.2.2</version>
     <packaging>jar</packaging>
 
     <name>rpchat</name>
 
-    <description>A simple plugin for Role Play commands for your Minecraft server.</description>
+    <description>A plugin for Role Play commands for your Minecraft server.</description>
     <properties>
         <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -69,7 +69,7 @@
         <dependency>
             <groupId>org.spigotmc</groupId>
             <artifactId>spigot-api</artifactId>
-            <version>1.20.2-R0.1-SNAPSHOT</version>
+            <version>1.20.4-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
     </dependencies>
