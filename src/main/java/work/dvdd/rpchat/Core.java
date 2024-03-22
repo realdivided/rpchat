@@ -2,15 +2,20 @@ package work.dvdd.rpchat;
 
 import org.bukkit.plugin.java.JavaPlugin;
 import work.dvdd.rpchat.commands.*;
-
+import org.bukkit.Bukkit;
+/**
+ By realdivided
+ **/
 public final class Core extends JavaPlugin {
-
     private static Core instance;
     private CommandManager commandManager;
 
     @Override
     public void onEnable() {
-        getServer().getConsoleSender().sendMessage("Running rpchat 1.2.2. Made by realdivided");
+        Bukkit.getConsoleSender().sendMessage("");
+        Bukkit.getConsoleSender().sendMessage("§6rpchat §f| §aSuccessfully enabled!");
+        Bukkit.getConsoleSender().sendMessage("§6rpchat §f| §aBy: §fgithub.com/realdivided!");
+        Bukkit.getConsoleSender().sendMessage("");
         instance = this;
 
         getConfig().options().copyDefaults(true);
@@ -36,3 +41,4 @@ public final class Core extends JavaPlugin {
     }
 
 }
+
