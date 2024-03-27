@@ -1,4 +1,4 @@
-![Banner](https://cdn.discordapp.com/attachments/1052589926119641098/1220346737789505606/image.png?ex=660e9b77&is=65fc2677&hm=6ace0aa2a63c7ac50379b513181f398cc5db3050f72e6b1234e91aba806f7fb5&)
+![Banner](https://media.discordapp.net/attachments/1052589926119641098/1220789392050753626/image.png?ex=661037b8&is=65fdc2b8&hm=a7e97fbc6fa66de51ebe5dab64b80728218b0e395c63ded73aee83e81edbc8b7&=&format=webp&quality=lossless&width=1368&height=663)
 ## This plugin adds the following commands:
 /do — to do something,\
 /try — to try something,\
@@ -11,9 +11,9 @@
 
 | MC Version | Tested | Supported | Notes                                                           |
 | ---------- | ------ | --------- | --------------------------------------------------------------- |
-| 1.15-1.18   | ✅    | ✅      | Since the Folia core does not work on older versions, you will not be able to use rpchat on versions below 1.19. |
-| 1.19-1.20  | ✅    | ✅       | Plugin will receive Folia support soon. |
+| 1.15-1.18   | :white_check_mark:    | :white_check_mark:      | Since the Folia core does not work on older versions, you will not be able to use rpchat on versions below 1.19. |
+| 1.19-1.20  | :white_check_mark:    | :white_check_mark:       | Plugin supports Folia. |
 
 ## All commands can be changed in the config.yml file.
-### The latest version: 1.2.1. Available on Minecraft 1.20.4. 
+### The latest version: 1.2.3. Available on Minecraft 1.20.4. 
 ### rpchat doesn't require other plugins.
