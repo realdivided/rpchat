@@ -38,3 +38,15 @@ commands:
     format: '§7§o%sender% is whispering: %message%'
     usage: '[§c!§f] §cUse: /whisper (message)'
     radius: 4
+  dice:
+    enabled: true
+    format: '§8*§d %sender% §ftossed a dice (%result%§f) §8'
+    radius: 20
+    usage: '[§c!§f] §cUse: /dice'
+    results:
+      - '§d⚀'
+      - '§d⚁'
+      - '§d⚂'
+      - '§d⚃'
+      - '§d⚄'
+      - '§d⚅'

@@ -14,7 +14,7 @@ public final class Core extends JavaPlugin {
     public void onEnable() {
         Bukkit.getConsoleSender().sendMessage("");
         Bukkit.getConsoleSender().sendMessage("§6rpchat §f| §aSuccessfully enabled!");
-        Bukkit.getConsoleSender().sendMessage("§6rpchat §f| §aBy: §fgithub.com/realdivided!");
+        Bukkit.getConsoleSender().sendMessage("§6rpchat §f| §aBy: §fgithub.com/realdivided/rpchat!");
         Bukkit.getConsoleSender().sendMessage("");
         instance = this;
 
@@ -28,7 +28,9 @@ public final class Core extends JavaPlugin {
                 .register(new TryCommand())
                 .register(new DoCommand())
                 .register(new CoinCommand())
-                .register(new WhisperCommand());
+                .register(new WhisperCommand())
+                .register(new DiceCommand());
+
     }
 
     @Override
