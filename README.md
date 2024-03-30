@@ -12,7 +12,7 @@
 
 | MC Version | Tested | Supported | Notes                                                           |
 | ---------- | ------ | --------- | --------------------------------------------------------------- |
-| 1.15-1.18   | :white_check_mark:    | :white_check_mark:      | Since the Folia core does not work on older versions, you will not be able to use rpchat on versions below 1.19. |
+| 1.15-1.18   | :white_check_mark:    | :white_check_mark:      | Since the Folia doesn't work on older versions, you won't be able to use rpchat on versions below 1.19. |
 | 1.19-1.20  | :white_check_mark:    | :white_check_mark:       | Plugin supports Folia. |
 
 ## All commands can be changed in the config.yml file.
