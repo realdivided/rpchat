@@ -1,4 +1,4 @@
-![Banner](https://media.discordapp.net/attachments/1052589926119641098/1223316523289018438/image.png?ex=6619694b&is=6606f44b&hm=f0601a87513f374c7acacc6ecee9160b4ffe08d5d04d38335fdd0222463f859a&=&format=webp&quality=lossless&width=1366&height=663)
+![Oh, Banner has broken. No problem!](images/rpBanner.png)
 ## This plugin adds the following commands:
 /do — to do something,\
 /try — to try something,\

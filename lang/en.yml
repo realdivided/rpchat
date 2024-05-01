@@ -3,6 +3,7 @@
 # %message% -> message
 # %result% -> result (try, dice, coin)
 
+# Tip! You can choose a translation into your language here https://github.com/realdivided/rpchat/tree/main/lang or add your own!
 commands:
   me:
     enabled: true
