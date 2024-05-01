@@ -12,9 +12,9 @@
 
 | MC Version | Tested | Supported | Notes                                                           |
 | ---------- | ------ | --------- | --------------------------------------------------------------- |
-| 1.15-1.18   | ✅    | ✅      | Since the Folia does not work on older versions, you will not be able to use rpchat on versions below 1.19. |
+| 1.15-1.18  | ✅    | ✅      | Since the Folia does not work on older versions, you will not be able to use rpchat on versions below 1.19. |
 | 1.19-1.20  | ✅   | ✅       | Plugin supports Folia. |
 
 ## All commands can be changed in the config.yml file.
-### The latest version: 1.3. Available on Minecraft 1.20.4. 
+### The latest version: 1.3.1. Available on Minecraft 1.20.6. 
 ### rpchat doesn't require other plugins.
