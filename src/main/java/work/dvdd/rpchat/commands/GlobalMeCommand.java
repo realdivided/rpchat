@@ -34,5 +34,4 @@ public class GlobalMeCommand extends Command {
         Bukkit.getOnlinePlayers().forEach(p -> p.sendMessage(message));
         return false;
     }
-
 }

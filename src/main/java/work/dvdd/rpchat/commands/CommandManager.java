@@ -4,32 +4,33 @@ import com.google.common.collect.Sets;
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandMap;
-import org.bukkit.command.SimpleCommandMap;
-import org.bukkit.plugin.SimplePluginManager;
+import org.bukkit.command.PluginCommand;
 import org.bukkit.plugin.java.JavaPlugin;
-
+import org.reflections.ReflectionUtils;
 import java.lang.reflect.Field;
+import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
+
 /**
  By realdivided
  **/
 public class CommandManager {
 
     private static CommandMap commandMap;
-
-    private final Set<Command> commands = Sets.newHashSet();
     private final JavaPlugin plugin;
+    private final Set<Command> commands = Sets.newHashSet();
 
     public CommandManager(JavaPlugin plugin) {
         this.plugin = plugin;
+        initializeCommandMap();
+    }
 
-        SimplePluginManager simpleCommandManager = (SimplePluginManager) Bukkit.getServer().getPluginManager();
-
+    private void initializeCommandMap() {
         try {
-            Field commandMapField = SimplePluginManager.class.getDeclaredField("commandMap");
+            Field commandMapField = Bukkit.getServer().getClass().getDeclaredField("commandMap");
             commandMapField.setAccessible(true);
-            commandMap = (SimpleCommandMap) commandMapField.get(simpleCommandManager);
+            commandMap = (CommandMap) commandMapField.get(Bukkit.getServer());
         } catch (NoSuchFieldException | IllegalAccessException e) {
             e.printStackTrace();
         }
@@ -38,7 +39,6 @@ public class CommandManager {
     public CommandManager register(Command command) {
         if (!plugin.getConfig().getBoolean(String.format("commands.%s.enabled", command.getName()))) return this;
 
-        command.register(commandMap);
         commandMap.register(plugin.getName().toLowerCase(), command);
         commands.add(command);
 
@@ -49,19 +49,18 @@ public class CommandManager {
         commands.forEach(this::unregister);
     }
 
+    @SuppressWarnings("unchecked")
     private void unregister(Command command) {
-        command.unregister(commandMap);
-
         try {
-            Field knownCommands = SimpleCommandMap.class.getDeclaredField("knownCommands");
-            knownCommands.setAccessible(true);
+            Field knownCommandsField = commandMap.getClass().getDeclaredField("knownCommands");
+            knownCommandsField.setAccessible(true);
 
-            Map<String, Command> commands = (Map<String, Command>) knownCommands.get(commandMap);
-            removeCommand(commands, command.getLabel());
-            command.getAliases().forEach(alias -> removeCommand(commands, alias));
+            Map<String, Command> knownCommands = (Map<String, Command>) knownCommandsField.get(commandMap);
+            removeCommand(knownCommands, command.getLabel());
+            command.getAliases().forEach(alias -> removeCommand(knownCommands, alias));
 
-            knownCommands.set(commandMap, commands);
-            knownCommands.setAccessible(false);
+            knownCommandsField.set(commandMap, knownCommands);
+
         } catch (NoSuchFieldException | IllegalAccessException e) {
             e.printStackTrace();
         }
@@ -69,7 +68,5 @@ public class CommandManager {
 
     private void removeCommand(Map<String, Command> commands, String name) {
         commands.remove(name);
-        commands.remove(plugin.getName().toLowerCase() + ":" + name);
     }
-
 }

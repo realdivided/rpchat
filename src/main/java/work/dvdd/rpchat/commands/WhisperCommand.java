@@ -34,5 +34,4 @@ public class WhisperCommand extends Command {
                 .forEach(p -> p.sendMessage(message));
         return false;
     }
-
 }

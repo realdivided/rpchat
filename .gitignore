@@ -1,3 +1,10 @@
-.idea
-rpchat.iml
-target
+# gradle
+
+.gradle/
+build/
+out/
+classes/
+
+# idea
+
+.idea/

@@ -41,6 +41,5 @@ public final class Core extends JavaPlugin {
     public static Core getInstance() {
         return instance;
     }
-
 }
 

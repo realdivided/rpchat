@@ -42,5 +42,4 @@ public class TryCommand extends Command {
                 .forEach(p -> p.sendMessage(message));
         return false;
     }
-
 }

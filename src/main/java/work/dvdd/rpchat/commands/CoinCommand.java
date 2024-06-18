@@ -33,5 +33,4 @@ public class CoinCommand extends Command {
                 .forEach(p -> p.sendMessage(message));
         return false;
     }
-
 }
